@@ -1,0 +1,78 @@
+/* General body styling with background image */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    background-image: url('lords.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+    color: white; 
+}
+
+header {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6); 
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+nav {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.team-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.team-list li {
+    display: inline-block;
+    margin: 15px;
+}
+
+.team-list a {
+    text-decoration: none;
+    color: white;
+    background-color: rgba(255, 99, 71, 0.7); 
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.team-list a:hover {
+    background-color: rgba(229, 83, 59, 0.7);
+}
+
+/* Footer styling for the quote */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background to highlight the quote */
+    padding: 20px;
+    text-align: center;
+    color: #FFD700; /* Golden text color */
+}
+
+footer blockquote {
+    font-style: italic;
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0;
+    color: #FFD700; /* Golden color for the quote */
+}
+
+footer blockquote::before {
+    content: "“"; /* Add quotation mark */
+    font-size: 2rem;
+}
+
+footer blockquote::after {
+    content: "”"; /* Add quotation mark */
+    font-size: 2rem;
+}

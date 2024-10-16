@@ -1,0 +1,149 @@
+/* General body styling with background image */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    background-color: #f3f4f6; /* Light gray background */
+    background-size: cover; 
+    color: #333; 
+}
+
+header {
+    text-align: center;
+    background-color: #00247d; /* England blue */
+    color: white;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.player-profile {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 80%;
+    max-width: 1000px;
+    margin: 20px 0;
+}
+
+.player-photo {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    margin: 20px auto;
+    display: block;
+}
+
+.player-details h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #c8102e; /* England red */
+}
+
+.player-details p {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: center;
+    color: #555;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #00247d; /* England blue */
+    margin-top: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Table Styling */
+.career-stats {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1rem;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.career-stats th, .career-stats td {
+    padding: 12px 15px;
+}
+
+.career-stats th {
+    background-color: #00247d; /* England blue */
+    color: white;
+    text-align: center;
+}
+
+.career-stats tr:nth-child(even) {
+    background-color: #f3f4f6; /* Light gray for even rows */
+}
+
+.career-stats td {
+    text-align: center;
+}
+
+/* Memorable Moments Section */
+.memorable-moments {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.moment-photo {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    margin: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.moment-photo:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+}
+
+.memorable-moments p {
+    text-align: center;
+    font-size: 1rem;
+    margin: 10px 0;
+    width: 100%;
+}
+
+/* Player Navigation */
+.player-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.previous, .next {
+    text-decoration: none;
+    background-color: #c8102e; /* England red */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.previous:hover, .next:hover {
+    background-color: #00247d; /* Change to England blue on hover */
+}
